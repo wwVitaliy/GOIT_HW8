@@ -10,7 +10,13 @@ class Quad extends Shape{
     }
 
     @Override
-    public double calcSquare() {
+    public double calcArea() {
         return side * side;
+    }
+
+    @Override
+    void printShapeParameters() {
+        System.out.println(this.getName() + " with next parameter:" );
+        System.out.println(" - side = " + this.side);
     }
 }

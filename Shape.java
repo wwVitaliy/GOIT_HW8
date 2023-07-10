@@ -1,6 +1,6 @@
 package GOIT_Module_8;
 
-abstract class Shape implements CalcSquare {
+abstract class Shape implements CalcArea {
 
     private String name;
 
@@ -15,5 +15,7 @@ abstract class Shape implements CalcSquare {
     void printName (){
         System.out.println(this.name);
     }
+
+    abstract void printShapeParameters();
 
 }

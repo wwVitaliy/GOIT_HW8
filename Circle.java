@@ -10,7 +10,13 @@ class Circle extends Shape{
     }
 
     @Override
-    public double calcSquare() {
+    public double calcArea() {
         return Math.PI * this.radius * this.radius;
+    }
+
+    @Override
+    void printShapeParameters() {
+        System.out.println(this.getName() + " with next parameter:" );
+        System.out.println(" - radius = " + radius);
     }
 }

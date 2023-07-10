@@ -11,7 +11,14 @@ class Rectangle extends Shape{
     }
 
     @Override
-    public double calcSquare() {
+    public double calcArea() {
         return sideA * sideB;
+    }
+
+    @Override
+    void printShapeParameters() {
+        System.out.println(this.getName() + " with next parameters:" );
+        System.out.println(" - sideA = " + this.sideA);
+        System.out.println(" - sideB = " + this.sideB);
     }
 }

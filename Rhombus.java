@@ -11,7 +11,14 @@ class Rhombus extends Shape{
     }
 
     @Override
-    public double calcSquare() {
+    public double calcArea() {
         return diagonal1 * diagonal2 / 2;
+    }
+
+    @Override
+    void printShapeParameters() {
+        System.out.println(this.getName() + " with next parameters:" );
+        System.out.println(" - diagonal1 = " + this.diagonal1);
+        System.out.println(" - diagonal2 = " + this.diagonal2);
     }
 }

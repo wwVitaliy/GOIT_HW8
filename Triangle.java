@@ -13,9 +13,17 @@ class Triangle extends Shape{
     }
 
     @Override
-    public double calcSquare() {
+    public double calcArea() {
         double p = (sideA + sideB + sideC)/2;
         return Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+    }
+
+    @Override
+    void printShapeParameters() {
+        System.out.println(this.getName() + " with next parameters:" );
+        System.out.println(" - sideA = " + this.sideA);
+        System.out.println(" - sideB = " + this.sideB);
+        System.out.println(" - sideC = " + this.sideC);
     }
 }
 
